@@ -13,7 +13,7 @@ Aplicativo feito em React Native que permite realizar o cálculo do **Índice de
 ### Pré-requisitos
 - Node 22+ instalado: [https://nodejs.org/en/download](https://nodejs.org/en/download)
 - Android Studio instalado: [https://developer.android.com/studio?hl=pt-br&_gl=1*nl129j*_up*MQ..&gclid=Cj0KCQjwlYHBBhD9ARIsALRu09rxNPq228HpyHa7VIYhfOPEGxQ4mMm83XcsO_7C9YKHm55AMZW5zBAaAuEOEALw_wcB&gclsrc=aw.ds](https://developer.android.com/studio?hl=pt-br&_gl=1*nl129j*_up*MQ..&gclid=Cj0KCQjwlYHBBhD9ARIsALRu09rxNPq228HpyHa7VIYhfOPEGxQ4mMm83XcsO_7C9YKHm55AMZW5zBAaAuEOEALw_wcB&gclsrc=aw.ds)
-- Expo Go (opcional)
+- Expo Go instalado (opcional)
 
 ### Passos
 
