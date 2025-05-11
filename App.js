@@ -80,6 +80,60 @@ export default function App() {
             <Text style={styles.result__title}>Resultado</Text>
             <Text style={{}}>IMC: <Text style={{ fontWeight: 'bold' }}>{imc}</Text></Text>
             <Text style={{}}>Grau: <Text style={{ fontWeight: 'bold' }}>{grau}</Text></Text>
+
+            <Text style={styles.result__title}>Tabela de classificação do IMC</Text>
+
+            <View style={styles.table}>
+              <View style={styles.table__row}>
+                <View  style={styles.table__header}>
+                  <Text style={{fontWeight: 'bold'}}>Abaixo de 18,5</Text>
+                </View>
+                <View style={styles.table__cell}>
+                  <Text>Abaixo do peso</Text>
+                </View>
+              </View>
+              <View style={styles.table__row}>
+                <View style={styles.table__header}>
+                  <Text style={{fontWeight: 'bold'}}>18,5 a 24,9</Text>
+                </View>
+                <View style={styles.table__cell}>
+                  <Text>Peso normal</Text>
+                </View>
+              </View>
+              <View style={styles.table__row}>
+                <View style={styles.table__header}>
+                  <Text style={{fontWeight: 'bold'}}>25 a 29,9</Text>
+                </View>
+                <View style={styles.table__cell}>
+                  <Text>Sobrepeso</Text>
+                </View>
+              </View>
+              <View style={styles.table__row}>
+                <View style={styles.table__header}>
+                  <Text style={{fontWeight: 'bold'}}>30 a 34,9</Text>
+                </View>
+                <View style={styles.table__cell}>
+                  <Text>Obesidade grau I</Text>
+                </View>
+              </View>
+              <View style={styles.table__row}>
+                <View style={styles.table__header}>
+                  <Text style={{fontWeight: 'bold'}}>35 a 39,9</Text>
+                </View>
+                <View style={styles.table__cell}>
+                  <Text>Obesidade grau II</Text>
+                </View>
+              </View>
+              <View style={styles.table__row}>
+                <View style={styles.table__header}>
+                  <Text style={{fontWeight: 'bold'}}>40 ou mais</Text>
+                </View>
+                <View style={styles.table__cell}>
+                  <Text>Obesidade grau III</Text>
+                </View>
+              </View>
+            </View>
+
           </View>
         }
       </ScrollView>
@@ -91,6 +145,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: StatusBar.currentHeight,
+    marginBottom: 20,
   },
   form: {
     paddingVertical: 10,
@@ -98,7 +153,7 @@ const styles = StyleSheet.create({
   form__icon: {
     alignSelf: 'center',
     color: '#1B56FD',
-    marginVertical: 40,
+    marginVertical: 20,
   },
   result: {
     marginTop: 10,
@@ -108,8 +163,21 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '500',
     marginBottom: 12,
-    marginTop: 40,
+    marginTop: 10,
     paddingVertical: 5,
     textAlign: 'center',
+  },
+  table: {
+    backgroundColor: '',
+    marginVertical: 10,
+  },
+  table__row: {
+    flexDirection: 'row',
+  },
+  table__header: {
+    flex: 1,
+  },
+  table__cell: {
+    flex: 1,
   }
 });
