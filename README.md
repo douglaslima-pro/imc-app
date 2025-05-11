@@ -6,8 +6,6 @@
 
 Aplicativo feito em React Native que permite realizar o cálculo do **Índice de Massa Corporal (IMC)**.
 
-<img src="assets/print.jpeg" alt="Print do aplicativo">
-
 ## Instruções de instalação
 
 ### Pré-requisitos
